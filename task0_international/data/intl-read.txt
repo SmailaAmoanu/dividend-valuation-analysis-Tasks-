@@ -1,0 +1,6 @@
+import pandas as pd
+
+priceDF = pd.read_csv('intl-price.txt', sep = r'\s+')
+totalDF = pd.read_csv('intl-total.txt', sep = r'\s+')
+priceRet = priceDF['Mkt'].values
+totalRet = totalDF['Mkt'].values
